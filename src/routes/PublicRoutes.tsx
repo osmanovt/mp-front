@@ -9,7 +9,7 @@ const PublicRoutes: FC = () => {
     const location = useLocation();
 
     const isMatch = checkPathMatch(location.pathname, paths);
-    console.log('====IsMatch====', isMatch);
+
     return (
       <Routes>
           <Route path={paths.home} element={<HomePage/>}/>

@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Helmet } from 'react-helmet';
 
 interface AccountSettingsProps {
 
@@ -6,7 +7,12 @@ interface AccountSettingsProps {
 
 const AccountSettings: FC<AccountSettingsProps> = () => {
     return (
-      <h1>Настройки аккаунта</h1>
+      <>
+          <Helmet>
+              <title>Главная страница - Marketplace</title>
+          </Helmet>
+          <h1>Настройки аккаунта</h1>
+      </>
     );
 };
 

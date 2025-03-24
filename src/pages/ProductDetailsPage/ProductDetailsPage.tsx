@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Helmet } from 'react-helmet';
 
 interface ProductDetailsPageProps {
 
@@ -6,9 +7,13 @@ interface ProductDetailsPageProps {
 
 const ProductDetailsPage: FC<ProductDetailsPageProps> = () => {
     return (
-      <h1>
-          Детали продукта
-      </h1>
+      <>
+          <Helmet>
+              <title>Главная страница - Marketplace</title>
+          </Helmet>
+          <h1>Детали продукта</h1>
+      </>
+
     );
 };
 
